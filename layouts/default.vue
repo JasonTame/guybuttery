@@ -1,8 +1,20 @@
 <template>
   <div>
     <nuxt />
+    <TheFooter />
   </div>
 </template>
+
+<script>
+import TheFooter from '@/components/Footer.vue'
+
+export default {
+  components: {
+    TheFooter
+  }
+}
+</script>
+
 
 <style>
 html {
