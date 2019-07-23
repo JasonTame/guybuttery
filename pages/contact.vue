@@ -40,10 +40,10 @@
       </div>
       <div class="field is-grouped">
         <div class="control">
-          <button class="button is-primary">Submit</button>
+          <button class="button is-large is-primary">Submit</button>
         </div>
         <div class="control">
-          <button class="button is-text">Cancel</button>
+          <button class="button is-large is-text">Cancel</button>
         </div>
       </div>
     </div>
