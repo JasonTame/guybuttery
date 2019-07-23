@@ -1,15 +1,21 @@
 <template>
-  <footer class="footer has-background-black-ter">
+  <footer class="footer is-small has-background-black-ter">
     <div class="content has-text-centered has-text-white">
-      <p>
-        <strong>Bulma</strong> by
-        <a href="https://jgthms.com">Jason Tame</a>. The source code is licensed
-        <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
-        is licensed
-        <a
-          href="http://creativecommons.org/licenses/by-nc-sa/4.0/"
-        >CC BY NC SA 4.0</a>.
-      </p>
+      <a class="footer-icons" href="#">
+        <font-awesome-icon :icon="['fab', 'facebook']" />
+      </a>
+      <a class="footer-icons" href="#">
+        <font-awesome-icon :icon="['fab', 'instagram']" />
+      </a>
+      <a class="footer-icons" href="#">
+        <font-awesome-icon :icon="['fab', 'youtube']" />
+      </a>
+      <a class="footer-icons" href="#">
+        <font-awesome-icon :icon="['fab', 'spotify']" />
+      </a>
+      <a class="footer-icons" href="#">
+        <font-awesome-icon :icon="['fas', 'music']" />
+      </a>
     </div>
   </footer>
 </template>
@@ -18,5 +24,11 @@
 export default {}
 </script>
 
-<style>
+<style lang="scss" scoped>
+.footer-icons {
+  color: #fff;
+  font-size: 2rem;
+  padding: 0.25rem;
+}
 </style>
+
