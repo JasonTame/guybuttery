@@ -1,15 +1,24 @@
 <template>
-  <section class="home-banner hero is-success is-large has-background-image">
+  <section
+    class="home-banner hero is-dark is-large has-background-image"
+    :style="{backgroundImage:'url(' + bgImage + ')'}"
+  >
     <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
-        <a class="navbar-item" href="https://bulma.io">
-          <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28" />
-        </a>
+        <!-- <a class="navbar-item" href="/">
+          <img
+            class="image"
+            src="@/assets/basic_logo.png"
+            alt="Site logo"
+            height="auto"
+            width="120px"
+          />
+        </a>-->
       </div>
       <div class="navbar-menu">
         <a
           role="button"
-          class="navbar-burger burger is-flex has-text-white"
+          class="navbar-burger burger is-flex has-text-white has-background-dark"
           aria-label="menu"
           aria-expanded="false"
           data-target="navbarBasicExample"
@@ -23,8 +32,8 @@
     </nav>
     <div class="hero-body">
       <div class="container has-text-centered">
-        <h1 class="title">Guy Buttery</h1>
-        <h2 class="subtitle">Amazing musician</h2>
+        <h1 class="title">{{title}}</h1>
+        <!-- <h2 class="subtitle">Amazing musician</h2> -->
       </div>
     </div>
 
@@ -36,7 +45,17 @@
     >
       <div class="modal-background is-dark"></div>
       <div class="modal-content">
-        <p class="has-text-centered">Modal content</p>
+        <ul class="site-navigation has-text-centered">
+          <li class>
+            <nuxt-link to="/">Home</nuxt-link>
+          </li>
+          <li>
+            <nuxt-link to="/about">About</nuxt-link>
+          </li>
+          <li>
+            <nuxt-link to="/contact">Contact</nuxt-link>
+          </li>
+        </ul>
       </div>
       <button class="modal-close is-large" aria-label="close" @click="hideModal"></button>
     </div>
@@ -50,17 +69,22 @@ export default {
       showModal: false
     }
   },
+  props: ['image', 'title'],
   methods: {
     hideModal() {
       this.showModal = false
+    }
+  },
+  computed: {
+    bgImage() {
+      return '/' + this.image
     }
   }
 }
 </script>
 
-<style scoped>
+<style lang='scss' scoped>
 .home-banner {
-  background-image: url('https://images.squarespace-cdn.com/content/v1/5c9f1e6dfb182014576de348/1554291693911-N3FSRWI5GRUPGFWJ81X0/ke17ZwdGBToddI8pDm48kJqIgasHBYIscIzFwRBpKeh7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UdPj6ZbBj5d4yIRHhbxHokfGXbLXw_2fxZsL37bl5fs10XfLCQDpnY7FxMb_ifd4GA/small+%C2%A9+Gillian+Coetzee++%283%29.jpg');
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -68,5 +92,19 @@ export default {
 
 .modal-background {
   background-color: #363636 !important;
+}
+
+.title {
+  font-size: 96px;
+}
+
+.site-navigation {
+  a {
+    color: #c3cccf;
+    font-size: 2.5rem;
+    &:hover {
+      color: #fff;
+    }
+  }
 }
 </style>
