@@ -2,8 +2,9 @@
     padding: 1rem !important;
 }
 
-.title {
-    margin-bottom: 2rem;
+.section-title {
+    font-size: 48px;
+    margin-bottom: 4rem;
 }
 
 .tour-list > .tour-event {

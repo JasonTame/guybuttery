@@ -1,11 +1,11 @@
 <template>
-  <div>
+  <div class="has-background-grey-darker has-text-white">
     <!-- Home Banner -->
     <hero image="guybuttery_1.jpg" title="Guy Buttery" />
 
-    <div class="section is-small">
+    <div class="section has-background-white has-text-dark is-medium">
       <div class="container">
-        <h1 class="title has-text-centered has-text-dark">About Guy</h1>
+        <h1 class="section-title has-text-centered">About Guy</h1>
         <div class="columns">
           <div class="column is-half">
             <p>“Guy Buttery is something of a National treasure”, says South Africa’s leading newspaper The Mercury. As an internationally recognised musician, this multi-instrumentalist enjoys invitations to play sell-out performances all over the globe. The USA, UK, Australia, France, Brazil, and Italy have all welcomed him back year after year.</p>
@@ -23,12 +23,12 @@
       </div>
     </div>
 
-    <div class="section is-small has-text-centered">
+    <div class="section is-medium has-text-centered">
       <TourList :tours="tours" />
-      <a href="/tours" class="button is-primary is-large is-outlined">View more tours and shows</a>
+      <a href="/tours" class="tour-cta button is-primary is-large">View more tours and shows</a>
     </div>
 
-    <div class="section is-small">
+    <div class="section has-background-white has-text-dark is-medium">
       <NewsList :news="news" />
     </div>
     <!-- <InstaFeed /> -->
@@ -62,5 +62,9 @@ export default {
 <style>
 .cta-btn {
   margin: 1rem 0;
+}
+
+.tour-cta {
+  margin-top: 3rem;
 }
 </style>

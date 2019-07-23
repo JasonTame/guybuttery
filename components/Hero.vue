@@ -18,7 +18,7 @@
       <div class="navbar-menu">
         <a
           role="button"
-          class="navbar-burger burger is-flex has-text-white has-background-dark"
+          class="navbar-burger burger is-flex has-text-white has-background-primary"
           aria-label="menu"
           aria-expanded="false"
           data-target="navbarBasicExample"

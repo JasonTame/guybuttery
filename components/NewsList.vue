@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <h1 class="title has-text-centered">Latest News</h1>
+    <h1 class="section-title has-text-centered">Latest News</h1>
     <div class="columns">
       <div class="column is-one-third" v-for="post in news" :key="post.id">
         <img class="image" :src="'/' + post.image" alt />
