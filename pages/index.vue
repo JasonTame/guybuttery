@@ -20,6 +20,10 @@
       </div>
     </div>
 
+    <div class="section is-small">
+      <TourList />
+    </div>
+
     <InstaFeed />
   </div>
 </template>
@@ -27,11 +31,13 @@
 <script>
 import Hero from '~/components/Hero.vue'
 import InstaFeed from '~/components/InstaFeed.vue'
+import TourList from '~/components/TourList.vue'
 
 export default {
   components: {
     Hero,
-    InstaFeed
+    InstaFeed,
+    TourList
   }
 }
 </script>
