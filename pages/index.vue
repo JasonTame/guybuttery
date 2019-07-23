@@ -10,7 +10,7 @@
             <p>“Guy Buttery is something of a National treasure”, says South Africa’s leading newspaper The Mercury. As an internationally recognised musician, this multi-instrumentalist enjoys invitations to play sell-out performances all over the globe. The USA, UK, Australia, France, Brazil, and Italy have all welcomed him back year after year.</p>
             <br />
             <p>However, to simply label Guy Buttery as one of South Africa’s musical phenoms would be an injustice. His international role has surpassed merely performing concerts to foreign audiences. It has evolved into one as an ambassador of South African music, inspiring people across the world with his homegrown style at the very heart of his talent and tenacity. Guy’s distinct unification of South African guitar music is the musical advocate for everything positive and beautiful about the place he calls home.</p>
-            <a href="/about" class="cta-btn button is-primary">Read More</a>
+            <a href="/about" class="cta-btn button is-primary is-large">Read More</a>
           </div>
           <div class="column">
             <img
@@ -22,8 +22,9 @@
       </div>
     </div>
 
-    <div class="section is-small">
-      <TourList />
+    <div class="section is-small has-text-centered">
+      <TourList :tours="tours" />
+      <a href="/tours" class="button is-primary is-large is-outlined">View more tours and shows</a>
     </div>
 
     <InstaFeed />
@@ -40,6 +41,11 @@ export default {
     Hero,
     InstaFeed,
     TourList
+  },
+  computed: {
+    tours() {
+      return this.$store.state.tours.subset
+    }
   }
 }
 </script>

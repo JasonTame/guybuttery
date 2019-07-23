@@ -1,3 +1,12 @@
 .navbar {
     padding: 1rem !important;
 }
+
+.tour-list > .tour-event {
+      border-bottom: 1px solid gray;
+      border-top: 1px solid gray;
+      display: flex;
+      justify-content: space-between;
+      padding: 0.25rem;
+      margin: 1rem;
+  }

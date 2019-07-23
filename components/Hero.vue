@@ -53,6 +53,9 @@
             <nuxt-link to="/about">About</nuxt-link>
           </li>
           <li>
+            <nuxt-link to="/tours">Tours</nuxt-link>
+          </li>
+          <li>
             <nuxt-link to="/contact">Contact</nuxt-link>
           </li>
         </ul>
