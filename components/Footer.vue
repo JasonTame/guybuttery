@@ -26,9 +26,12 @@ export default {}
 
 <style lang="scss" scoped>
 .footer-icons {
-  color: #fff;
+  color: #c3cccf;
   font-size: 2rem;
   padding: 0.25rem;
+  &:hover {
+    color: #fff;
+  }
 }
 </style>
 

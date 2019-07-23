@@ -3,8 +3,9 @@
     <!-- Home Banner -->
     <hero image="guybuttery_1.jpg" title="Guy Buttery" />
 
-    <div class="section is-medium">
+    <div class="section is-small">
       <div class="container">
+        <h1 class="title has-text-centered has-text-dark">About Guy</h1>
         <div class="columns">
           <div class="column is-half">
             <p>“Guy Buttery is something of a National treasure”, says South Africa’s leading newspaper The Mercury. As an internationally recognised musician, this multi-instrumentalist enjoys invitations to play sell-out performances all over the globe. The USA, UK, Australia, France, Brazil, and Italy have all welcomed him back year after year.</p>
@@ -27,24 +28,32 @@
       <a href="/tours" class="button is-primary is-large is-outlined">View more tours and shows</a>
     </div>
 
-    <InstaFeed />
+    <div class="section is-small">
+      <NewsList :news="news" />
+    </div>
+    <!-- <InstaFeed /> -->
   </div>
 </template>
 
 <script>
-import Hero from '~/components/Hero.vue'
-import InstaFeed from '~/components/InstaFeed.vue'
-import TourList from '~/components/TourList.vue'
+import Hero from '@/components/Hero.vue'
+import InstaFeed from '@/components/InstaFeed.vue'
+import TourList from '@/components/TourList.vue'
+import NewsList from '@/components/NewsList.vue'
 
 export default {
   components: {
     Hero,
     InstaFeed,
-    TourList
+    TourList,
+    NewsList
   },
   computed: {
     tours() {
       return this.$store.state.tours.subset
+    },
+    news() {
+      return this.$store.state.news.subset
     }
   }
 }

@@ -2,6 +2,10 @@
     padding: 1rem !important;
 }
 
+.title {
+    margin-bottom: 2rem;
+}
+
 .tour-list > .tour-event {
       border-bottom: 1px solid gray;
       border-top: 1px solid gray;
