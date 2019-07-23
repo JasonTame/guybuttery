@@ -7,3 +7,24 @@ Version: 1.0
 Author: Jason Tame
 License: GPL2
 */
+
+/****************************************************************************************************************
+ * Custom Post types
+ *
+ */
+function create_tour_post_type() {
+    register_post_type( 'tours', // /casestudies instead of /posts
+        array(
+            'labels' => array(
+                'name' => __( 'Tours' ),
+                'singular_name' => __( 'Tour' )
+                
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'show_in_rest' => true,
+
+        )
+    );
+}
+add_action( 'init', 'create_tour_post_type' );
