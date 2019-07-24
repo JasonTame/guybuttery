@@ -1,6 +1,5 @@
 <template>
   <div>
-    <h1 class="has-text-centered has-text-white section-title">Tour List</h1>
     <div class="tour-list container has-text-centered">
       <div :key="tour.id" v-for="tour in tours" class="tour-event">
         <p class="tour-date">{{tour.date}}</p>

@@ -24,6 +24,7 @@
     </div>
 
     <div class="section is-medium has-text-centered">
+      <h1 class="section-title has-text-white has-text-centered">Upcoming shows & tours</h1>
       <TourList :tours="tours" />
       <a href="/tours" class="tour-cta button is-primary is-large">View more tours and shows</a>
     </div>
@@ -59,7 +60,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
 .cta-btn {
   margin: 1rem 0;
 }
