@@ -23,7 +23,7 @@ export default {
   ** Global CSS
   */
   css: [
-    '@/assets/global.css'
+    '@/assets/global.scss'
   ],
   /*
   ** Plugins to load before mounting the App
@@ -35,7 +35,6 @@ export default {
   */
   modules: [
     // Doc:https://github.com/nuxt-community/modules/tree/master/packages/bulma
-    '@nuxtjs/bulma',
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     [
