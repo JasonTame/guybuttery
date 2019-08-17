@@ -88,18 +88,18 @@ sw.*
 .DS_Store
 
 # Ignore all WordPress files and folders except for plugins and themes
-/wordpress/index.php
-/wordpress/wp-*.php
-/wordpress/wp-content/index.php
-/wordpress/wp-content/languages/
-/wordpress/wp-content/themes/index.php
-/wordpress/wp-content/uploads/wp-migrate-db/index.php
-/wordpress/license.txt
-/wordpress/readme.html
-/wordpress/xmlrpc.php
-/wordpress/wp-admin/*
-/wordpress/wp-includes/*
-/wordpress/wp-content/db.php
-/wordpress/wp-content/index.php
-/wordpress/wp-content/debug.log
-/wordpress/wp-content/uploads/**
+wordpress/index.php
+wordpress/wp-*.php
+wordpress/wp-content/index.php
+wordpress/wp-content/languages/
+wordpress/wp-content/themes/index.php
+wordpress/wp-content/uploads/wp-migrate-db/index.php
+wordpress/license.txt
+wordpress/readme.html
+wordpress/xmlrpc.php
+wordpress/wp-admin/*
+wordpress/wp-includes/*
+wordpress/wp-content/db.php
+wordpress/wp-content/index.php
+wordpress/wp-content/debug.log
+wordpress/wp-content/uploads/**
