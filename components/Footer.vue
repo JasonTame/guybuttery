@@ -17,11 +17,18 @@
         <font-awesome-icon :icon="['fas', 'music']" />
       </a>
     </div>
+    <Signup />
   </footer>
 </template>
 
 <script>
-export default {}
+// import Signup from '@/components/Signup.vue'
+
+// export default {
+//   components: {
+//     Signup
+//   }
+// }
 </script>
 
 <style lang="scss" scoped>

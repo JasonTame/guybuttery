@@ -18,7 +18,7 @@
       <div class="navbar-menu">
         <a
           role="button"
-          class="navbar-burger burger is-flex has-text-white has-background-primary"
+          class="navbar-burger burger is-flex has-text-white has-background-black-ter"
           aria-label="menu"
           aria-expanded="false"
           data-target="navbarBasicExample"
@@ -99,6 +99,11 @@ export default {
 
 .title {
   font-size: 96px;
+}
+
+.navbar {
+  position: fixed;
+  right: 0px;
 }
 
 .site-navigation {

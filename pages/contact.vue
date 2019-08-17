@@ -36,15 +36,15 @@
       <div class="field">
         <label class="label">Message</label>
         <div class="control">
-          <textarea class="textarea" placeholder="Textarea"></textarea>
+          <textarea class="textarea" placeholder></textarea>
         </div>
       </div>
       <div class="field is-grouped">
         <div class="control">
-          <button class="button is-large is-primary">Submit</button>
+          <button class="button is-primary">Submit</button>
         </div>
         <div class="control">
-          <button class="button is-large is-text">Cancel</button>
+          <button class="button is-text">Cancel</button>
         </div>
       </div>
     </div>
