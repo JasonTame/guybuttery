@@ -4,8 +4,8 @@
     :style="{backgroundImage:'url(' + bgImage + ')'}"
   >
     <nav class="navbar" role="navigation" aria-label="main navigation">
-      <div class="navbar-brand">
-        <!-- <a class="navbar-item" href="/">
+      <!-- <div class="navbar-brand">
+        <a class="navbar-item" href="/">
           <img
             class="image"
             src="@/assets/basic_logo.png"
@@ -13,8 +13,8 @@
             height="auto"
             width="120px"
           />
-        </a>-->
-      </div>
+        </a>
+      </div>-->
       <div class="navbar-menu">
         <a
           role="button"
@@ -98,12 +98,21 @@ export default {
 }
 
 .title {
-  font-size: 96px;
+  font-size: 4rem;
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 5rem;
+  }
 }
 
 .navbar {
   position: fixed;
   right: 0px;
+}
+.navbar-menu {
+  display: inline !important;
 }
 
 .site-navigation {
