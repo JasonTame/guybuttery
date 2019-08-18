@@ -26,7 +26,7 @@
     <div class="section is-medium has-text-centered">
       <h1 class="section-title has-text-white has-text-centered">Upcoming shows & tours</h1>
       <TourList :tours="tours" />
-      <a href="/tours" class="tour-cta button is-primary is-large">View more tours and shows</a>
+      <a href="/tours" class="tour-cta button is-primary">View more tours and shows</a>
     </div>
 
     <!-- <div class="section has-background-white has-text-dark is-medium">
@@ -68,7 +68,10 @@ export default {
 .tour-cta {
   margin-top: 3rem;
 }
-.home-image {
-  margin: 0 15px;
+
+@media screen and (min-width: 768px) {
+  .home-image {
+    margin: 0 15px;
+  }
 }
 </style>
