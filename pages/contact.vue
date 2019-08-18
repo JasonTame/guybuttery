@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Hero image="guybuttery_3.jpg" title="Contact" />
+    <Hero image="guybuttery_4.jpg" title="Contact" />
     <div class="section is-medium contact-form">
       <h1 class="section-title has-text-centered">Fill in the form below to get in touch</h1>
       <div class="columns">
