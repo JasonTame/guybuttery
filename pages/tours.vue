@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Hero image="guybuttery_3.jpg" title="Tours" />
+    <Hero image="guybuttery_1.jpg" title="Tours" />
     <div class="section is-small">
       <h1 class="section-title has-text-centered">Upcoming shows & tours</h1>
       <TourList :tours="tours" />
