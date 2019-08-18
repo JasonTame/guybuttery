@@ -58,6 +58,9 @@
           <li>
             <nuxt-link to="/contact">Contact</nuxt-link>
           </li>
+          <li>
+            <a target="_blank" href="https://guybuttery.bandcamp.com/music">Store</a>
+          </li>
         </ul>
       </div>
       <button class="modal-close is-large" aria-label="close" @click="hideModal"></button>
