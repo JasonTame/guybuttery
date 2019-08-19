@@ -45,6 +45,11 @@ export default {
   async fetch({ store, params }) {
     let { data } = await axios.get(Config.wpDomain + Config.api.aboutPage)
     store.commit('setAboutPage', data)
+  },
+  head() {
+    return {
+      title: this.$store.state.aboutPage.title.rendered
+    }
   }
 }
 </script>

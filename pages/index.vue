@@ -63,6 +63,11 @@ export default {
     news() {
       return this.$store.state.news.subset
     }
+  },
+  head() {
+    return {
+      title: this.$store.state.homePage.title.rendered
+    }
   }
 }
 </script>

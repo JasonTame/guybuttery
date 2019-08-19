@@ -28,6 +28,11 @@ export default {
     tours() {
       return this.$store.state.tours.all
     }
+  },
+  head() {
+    return {
+      title: this.$store.state.toursPage.title.rendered
+    }
   }
 }
 </script>

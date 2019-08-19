@@ -64,6 +64,11 @@ export default {
   async fetch({ store, params }) {
     let { data } = await axios.get(Config.wpDomain + Config.api.contactPage)
     store.commit('setContactPage', data)
+  },
+  head() {
+    return {
+      title: this.$store.state.contactPage.title.rendered
+    }
   }
 }
 </script>
