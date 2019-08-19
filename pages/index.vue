@@ -1,7 +1,7 @@
 <template>
   <div class="has-background-grey-darker has-text-white">
     <!-- Home Banner -->
-    <hero image="guybuttery_3.jpg" title="Guy Buttery" />
+    <hero :image="$store.state.homePage.acf.header_image" title="Guy Buttery" />
 
     <div class="section has-background-white has-text-dark is-medium">
       <div class="container">

@@ -83,7 +83,7 @@ export default {
   },
   computed: {
     bgImage() {
-      return '/' + this.image
+      return this.image
     }
   }
 }

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Hero image="guybuttery_4.jpg" title="Contact" />
+    <Hero :image="$store.state.contactPage.acf.header_image" title="Contact" />
     <div class="section is-medium contact-form">
       <h1 class="section-title has-text-centered">Fill in the form below to get in touch</h1>
       <div class="columns">

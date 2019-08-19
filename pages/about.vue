@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Hero image="guybuttery_5.jpg" title="About" />
+    <Hero :image="$store.state.aboutPage.acf.header_image" title="About" />
     <div class="section is-medium">
       <div class="container">
         <div class="columns">
