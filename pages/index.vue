@@ -23,11 +23,6 @@
       <TourList :tours="tours" />
       <a href="/tours" class="tour-cta button is-primary">View more tours and shows</a>
     </div>
-
-    <!-- <div class="section has-background-white has-text-dark is-medium">
-      <NewsList :news="news" />
-    </div>-->
-    <!-- <InstaFeed /> -->
   </div>
 </template>
 
@@ -36,16 +31,12 @@ import axios from 'axios'
 import Config from '~/assets/config'
 
 import Hero from '@/components/Hero.vue'
-import InstaFeed from '@/components/InstaFeed.vue'
 import TourList from '@/components/TourList.vue'
-import NewsList from '@/components/NewsList.vue'
 
 export default {
   components: {
     Hero,
-    InstaFeed,
-    TourList,
-    NewsList
+    TourList
   },
   async fetch({ store, params }) {
     let { data } = await axios.get(Config.wpDomain + Config.api.homePage)
@@ -54,9 +45,6 @@ export default {
   computed: {
     tours() {
       return this.$store.state.tours.subset
-    },
-    news() {
-      return this.$store.state.news.subset
     }
   },
   head() {
