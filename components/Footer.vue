@@ -17,7 +17,6 @@
         <font-awesome-icon :icon="['fas', 'music']" />
       </a>
     </div>
-    <Signup />
   </footer>
 </template>
 
