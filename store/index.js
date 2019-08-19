@@ -1,4 +1,9 @@
+import Config from '~/assets/config'
+import axios from 'axios'
+
+
 export const state = () => ({
+  global: [],
   homePage: [],
   aboutPage: [],
   toursPage: [],
@@ -6,6 +11,9 @@ export const state = () => ({
 })
 
 export const mutations = {
+  setGlobalOptions(state, obj) {
+    state.global = obj
+  },
   setHomePage(state, obj) {
     state.homePage = obj
   },
@@ -17,5 +25,13 @@ export const mutations = {
   },
   setContactPage(state, obj) {
     state.contactPage = obj
+  }
+}
+
+export const actions = {
+  nuxtServerInit({ commit }) {
+    // Get all the global ACF options
+    return axios.get(Config.wpDomain + Config.api.global)
+        .then(res => commit('setGlobalOptions', res.data))
   }
 }

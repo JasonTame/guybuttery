@@ -16,6 +16,7 @@ export default {
   url: 'https://goofy-gates-b5b016.netlify.com', // your website url
 //   loadDbName: '[starter_wp]', // db name if needed
   api: {
+    global: '/acf/v3/options/options',
     homePage: '/wp/v2/pages/10',
     aboutPage: '/wp/v2/pages/5',
     toursPage: '/wp/v2/pages/12',

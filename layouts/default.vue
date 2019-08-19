@@ -1,7 +1,7 @@
 <template>
   <div>
     <nuxt />
-    <TheFooter />
+    <TheFooter :links="$store.state.global.acf.social_media_links" />
   </div>
 </template>
 

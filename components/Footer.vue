@@ -1,31 +1,31 @@
 <template>
   <footer class="footer is-small has-background-black-ter">
     <div class="content has-text-centered has-text-white">
-      <a class="footer-icons" href="#">
-        <font-awesome-icon :icon="['fab', 'facebook']" />
-      </a>
-      <a class="footer-icons" href="#">
-        <font-awesome-icon :icon="['fab', 'instagram']" />
-      </a>
-      <a class="footer-icons" href="#">
-        <font-awesome-icon :icon="['fab', 'youtube']" />
-      </a>
-      <a class="footer-icons" href="#">
-        <font-awesome-icon :icon="['fab', 'spotify']" />
-      </a>
-      <a class="footer-icons" href="#">
-        <font-awesome-icon :icon="['fas', 'music']" />
+      <a
+        target="_blank"
+        class="footer-icons"
+        :href="link.url"
+        v-bind:key="link"
+        v-for="link in links"
+      >
+        <font-awesome-icon :icon="[link.icon_type, link.name]" />
       </a>
     </div>
   </footer>
 </template>
+
+<script>
+export default {
+  props: ['links']
+}
+</script>
 
 
 <style lang="scss" scoped>
 .footer-icons {
   color: #c3cccf;
   font-size: 2rem;
-  padding: 0.25rem;
+  padding: 0.5rem;
   &:hover {
     color: #fff;
   }
