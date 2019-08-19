@@ -52,11 +52,18 @@
 </template>
 
 <script>
+import axios from 'axios'
+import Config from '~/assets/config'
+
 import Hero from '~/components/Hero.vue'
 
 export default {
   components: {
     Hero
+  },
+  async fetch({ store, params }) {
+    let { data } = await axios.get(Config.wpDomain + Config.api.contactPage)
+    store.commit('setContactPage', data)
   }
 }
 </script>

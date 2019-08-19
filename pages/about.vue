@@ -5,7 +5,7 @@
       <div class="container">
         <div class="columns">
           <div class="column">
-            <p>“Guy Buttery is something of a National treasure”, says South Africa’s leading newspaper The Mercury. As an internationally recognised musician, this multi-instrumentalist enjoys invitations to play sell-out performances all over the globe. The USA, UK, Australia, France, Brazil, and Italy have all welcomed him back year after year. However, to simply label Guy Buttery as one of South Africa’s musical phenoms would be an injustice. His international role has surpassed merely performing concerts to foreign audiences. It has evolved into one as an ambassador of South African music, inspiring people across the world with his homegrown style at the very heart of his talent and tenacity. Guy’s distinct unification of South African guitar music is the musical advocate for everything positive and beautiful about the place he calls home.</p>
+            <p>{{$store.state.aboutPage.acf.text}}</p>
           </div>
           <div class="column">
             <div class="about-video">
@@ -31,6 +31,9 @@
 
 
 <script>
+import axios from 'axios'
+import Config from '~/assets/config'
+
 import Hero from '~/components/Hero.vue'
 import Gallery from '~/components/Gallery.vue'
 
@@ -38,6 +41,10 @@ export default {
   components: {
     Hero,
     Gallery
+  },
+  async fetch({ store, params }) {
+    let { data } = await axios.get(Config.wpDomain + Config.api.aboutPage)
+    store.commit('setAboutPage', data)
   }
 }
 </script>

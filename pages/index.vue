@@ -37,6 +37,9 @@
 </template>
 
 <script>
+import axios from 'axios'
+import Config from '~/assets/config'
+
 import Hero from '@/components/Hero.vue'
 import InstaFeed from '@/components/InstaFeed.vue'
 import TourList from '@/components/TourList.vue'
@@ -48,6 +51,10 @@ export default {
     InstaFeed,
     TourList,
     NewsList
+  },
+  async fetch({ store, params }) {
+    let { data } = await axios.get(Config.wpDomain + Config.api.homePage)
+    store.commit('setHomePage', data)
   },
   computed: {
     tours() {
