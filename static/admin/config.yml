@@ -15,6 +15,9 @@ collections:
         editor:
           preview: false
         fields:
+          - label: "Banner Image"
+            name: "banner_image"
+            widget: "image"
           - {label: Title, name: title, widget: string}
           - {label: Intro, name: intro, widget: markdown}
           - {label: Intro Video, name: intro_video, widget: string}
