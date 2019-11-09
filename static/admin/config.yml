@@ -12,7 +12,24 @@ collections:
       - label: "Home Page"
         name: 'home'
         file: 'assets/content/home.json'
+        preview: false
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Intro, name: intro, widget: markdown}
           - {label: Intro Video, name: intro_video, widget: string}
+  - label: "Tour"
+    name: "tour"
+    folder: "assets/content/tours"
+    preview: false
+    fields:
+      - label: "Date" 
+        name: "date" 
+        widget: datetime
+        default: ""
+        format: "LLL"
+      - {label: Venue, name: venue, widget: string }
+      - {label: Location, name: Location, widget: string }
+      - {label: Link, name: link, widget: string }
+
+
+
