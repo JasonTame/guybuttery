@@ -12,7 +12,8 @@ collections:
       - label: "Home Page"
         name: 'home'
         file: 'assets/content/home.json'
-        preview: false
+        editor:
+          preview: false
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Intro, name: intro, widget: markdown}
@@ -20,7 +21,11 @@ collections:
   - label: "Tour"
     name: "tour"
     folder: "assets/content/tours"
-    preview: false
+    create: true
+    slug: '{{slug}}'
+    format: 'json'
+    editor:
+      preview: false
     fields:
       - label: "Date" 
         name: "date" 
@@ -29,6 +34,18 @@ collections:
         format: "LLL"
       - {label: Venue, name: venue, widget: string }
       - {label: Location, name: Location, widget: string }
+      - {label: Link, name: link, widget: string }
+  - label: "Album"
+    name: "album"
+    folder: "assets/content/albums"
+    create: true
+    slug: '{{slug}}'
+    format: 'json'
+    editor:
+      preview: false
+    fields:
+      - {label: Album Name, name: name, widget: string }
+      - {label: Album Author, name: author, widget: string }
       - {label: Link, name: link, widget: string }
 
 
