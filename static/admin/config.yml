@@ -19,8 +19,21 @@ collections:
             name: "banner_image"
             widget: "image"
           - {label: Title, name: title, widget: string}
-          - {label: Intro, name: intro, widget: markdown}
+          - {label: Intro, name: body, widget: markdown}
           - {label: Intro Video, name: intro_video, widget: string}
+      - label: "Landing Page"
+        name: 'landing'
+        file: 'assets/content/landing.json'
+        editor:
+          preview: false
+        fields:
+          - label: "Cover Image"
+            name: "cover_image"
+            widget: "image"
+          - {label: "Active", name: "active", widget: "boolean", default: false}
+          - {label: Title, name: title, widget: string}
+          - {label: Description, name: body, widget: markdown}
+          - {label: Link, name: link, widget: string}
   - label: "Tour"
     name: "tour"
     folder: "assets/content/tours"
