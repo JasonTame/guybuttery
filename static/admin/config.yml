@@ -27,10 +27,8 @@ collections:
         editor:
           preview: false
         fields:
-          - label: "Cover Image"
-            name: "cover_image"
-            widget: "image"
           - {label: "Active", name: "active", widget: "boolean", default: false}
+          - {label: Cover Image, name: cover_image, widget: image}
           - {label: Title, name: title, widget: string}
           - {label: Description, name: body, widget: markdown}
           - {label: Link, name: link, widget: string}
