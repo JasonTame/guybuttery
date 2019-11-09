@@ -16,3 +16,6 @@ collections:
           - {label: Title, name: title, widget: string}
           - {label: Intro, name: intro, widget: markdown}
           - {label: Intro Video, name: intro_video, widget: string}
+  - label: "Tour"
+    name: "tour"
+    folder: "assets/content/tour"

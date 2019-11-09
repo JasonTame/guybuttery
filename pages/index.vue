@@ -272,6 +272,8 @@ import Hero from '@/components/Hero.vue'
 import TourList from '@/components/TourList.vue'
 
 export default {
+  
+
   components: {
     Hero,
     TourList
@@ -287,7 +289,8 @@ export default {
   },
   head() {
     return {
-      title: this.$store.state.homePage.title.rendered
+      title: this.$store.state.homePage.title.rendered,
+      script: [{ src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }],
     }
   }
 }
