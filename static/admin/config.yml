@@ -50,6 +50,19 @@ collections:
       - {label: Album Name, name: name, widget: string }
       - {label: Album Author, name: author, widget: string }
       - {label: Link, name: link, widget: string }
+  - label: "Social Media Link"
+    name: "social_link"
+    folder: "assets/content/social-links"
+    create: true
+    format: 'json'
+    editor:
+      preview: false
+    fields: 
+      - label: "Name"
+        name: "name"
+        widget: "select"
+        options: ["facebook", "instagram", "youtube", "spotify"]
+      - {label: Link, name: link, widget: string }
 
 
 
