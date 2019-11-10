@@ -9,7 +9,6 @@
         <div class="columns">
           <div class="column is-half">
             <div v-html="homePage.body"></div>
-            <a href="/about" class="cta-btn button is-primary">Read More</a>
           </div>
           <div class="column is-half">
             <div class="embed-container">
@@ -55,9 +54,6 @@
 </template>
 
 <script>
-import axios from 'axios'
-import Config from '~/assets/config'
-
 import AlbumList from '@/components/AlbumList.vue'
 import ContactForm from '@/components/ContactForm.vue'
 import Hero from '@/components/Hero.vue'
