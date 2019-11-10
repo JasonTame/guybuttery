@@ -10,8 +10,8 @@
         <div class="card-content">
           <div class="media">
             <div class="media-content">
-              <p class="title is-4">{{album.title}}</p>
-              <p class="subtitle is-6">by {{album.author}}</p>
+              <p class="title is-5">{{album.title}}</p>
+              <p class="subtitle is-7">by {{album.author}}</p>
             </div>
           </div>
 
