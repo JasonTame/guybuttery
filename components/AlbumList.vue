@@ -4,7 +4,7 @@
       <div class="card">
         <div class="card-image">
           <figure class="image is-4by3">
-            <img src="https://f4.bcbits.com/img/a4124745363_2.jpg" alt="Placeholder image" />
+            <img :src="album.album_image" alt="Placeholder image" />
           </figure>
         </div>
         <div class="card-content">
