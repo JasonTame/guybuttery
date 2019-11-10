@@ -94,7 +94,7 @@ export default {
   },
   head() {
     return {
-      title: this.$store.state.homePage.title,
+      title: this.homePage.title,
       script: [
         { src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }
       ]
