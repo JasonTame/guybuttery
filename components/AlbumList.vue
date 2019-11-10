@@ -1,6 +1,6 @@
 <template>
-  <div class="columns">
-    <div v-for="album in albums" :key="album.slug" class="column is-one-third">
+  <div class="album-container">
+    <div v-for="album in albums" :key="album.slug" class="album">
       <div class="card">
         <div class="card-image">
           <figure class="image is-4by3">
@@ -38,6 +38,17 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.album-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.album {
+  margin: 1rem;
+  @media only screen and (min-width: 1025px) {
+    width: 30%;
+  }
+  width: 100%;
+}
 .album-button {
   &:hover {
     a {
