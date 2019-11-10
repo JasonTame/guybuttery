@@ -74,6 +74,7 @@ collections:
     fields: 
       - label: "Name"
         name: "name"
+        identifier_field: "link"
         widget: "select"
         options: ["facebook", "instagram", "youtube", "spotify"]
       - {label: Link, name: link, widget: string }
