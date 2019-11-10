@@ -3,7 +3,7 @@
     <div v-for="album in albums" :key="album.slug" class="album">
       <div class="card">
         <div class="card-image">
-          <figure class="image is-4by3">
+          <figure class="image">
             <img :src="album.album_image" alt="Placeholder image" />
           </figure>
         </div>
