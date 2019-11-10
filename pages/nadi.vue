@@ -75,6 +75,9 @@ export default {
   background-position: center;
   background-size: cover;
   .signup {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     &-form {
       justify-content: center;
     }
