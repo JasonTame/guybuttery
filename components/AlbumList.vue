@@ -23,16 +23,6 @@
                 </span>
                 <a target="_blank" class="has-text-primary" :href="`${album.link}?action=buy`">Buy</a>
               </div>
-              <div class="button is-primary is-outlined album-button">
-                <span class="album-button-icon">
-                  <font-awesome-icon icon="share" />
-                </span>
-                <a
-                  target="_blank"
-                  class="has-text-primary"
-                  :href="`${album.link}?action=share`"
-                >Share</a>
-              </div>
             </div>
           </div>
         </div>
@@ -49,8 +39,8 @@ export default {
 
 <style lang="scss" scoped>
 .album-button {
-  a {
-    &:hover {
+  &:hover {
+    a {
       color: #ffffff !important;
     }
   }
