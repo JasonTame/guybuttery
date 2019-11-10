@@ -21,7 +21,7 @@
                 <span class="album-button-icon">
                   <font-awesome-icon icon="shopping-cart" />
                 </span>
-                <a target="_blank" class="has-text-primary" :href="`${album.link}/?action=buy`">Buy</a>
+                <a target="_blank" class="has-text-primary" :href="`${album.link}?action=buy`">Buy</a>
               </div>
               <div class="button is-primary is-outlined album-button">
                 <span class="album-button-icon">
@@ -30,7 +30,7 @@
                 <a
                   target="_blank"
                   class="has-text-primary"
-                  :href="`${album.link}/?action=share`"
+                  :href="`${album.link}?action=share`"
                 >Share</a>
               </div>
             </div>
