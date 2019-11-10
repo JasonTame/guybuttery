@@ -18,11 +18,7 @@
                 <a class="has-text-dark" :href="landingPage.link" target="_blank">Check it out!</a>
               </div>
               <div class="button is-medium is-white">
-                <a
-                  class="has-text-dark"
-                  href="https://guybuttery.netlify.com"
-                  target="_blank"
-                >View website</a>
+                <a class="has-text-dark" href="https://guybuttery.netlify.com">View website</a>
               </div>
             </div>
           </div>
