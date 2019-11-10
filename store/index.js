@@ -37,6 +37,8 @@ export const actions = {
       res.slug = key.slice(2, -5)
       return res
     })
+
+    albums.sort((a, b) => (a.year_released > b.year_released) ? -1 : 1);
     await commit('setAlbums', albums)
 
     // Fetch social links
