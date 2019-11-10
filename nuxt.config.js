@@ -37,6 +37,12 @@ export default {
     // Doc:https://github.com/nuxt-community/modules/tree/master/packages/bulma
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
+    ['nuxt-facebook-pixel-module', {
+      /* module options */
+      track: 'PageView',
+      pixelId: '741263916286111',
+      disabled: false
+    }],
     [
       'nuxt-fontawesome', {
         imports: [
