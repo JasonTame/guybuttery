@@ -10,13 +10,19 @@
       >
         <font-awesome-icon :icon="['fab', link.name]" />
       </a>
+      <signup-form />
     </div>
   </footer>
 </template>
 
 <script>
+import SignupForm from '@/components/SignupForm.vue'
+
 export default {
-  props: ['links']
+  props: ['links'],
+  components: {
+    SignupForm
+  }
 }
 </script>
 
