@@ -48,6 +48,11 @@ export default {
     width: 30%;
   }
   width: 100%;
+  .card {
+    @media only screen and (min-width: 1025px) {
+      min-height: 460px;
+    }
+  }
 }
 .album-button {
   &:hover {
