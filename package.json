@@ -17,6 +17,7 @@
     "@fortawesome/vue-fontawesome": "^0.1.6",
     "@nuxtjs/axios": "^5.3.6",
     "@nuxtjs/bulma": "^1.2.1",
+    "@nuxtjs/pwa": "^3.0.0-beta.19",
     "nuxt": "^2.0.0",
     "nuxt-fontawesome": "^0.4.0",
     "vuex": "^3.1.1"

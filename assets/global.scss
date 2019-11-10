@@ -34,6 +34,7 @@ $fullhd: 1344px + (2 * $gap);
     border-bottom: 1px solid gray;
     border-top: 1px solid gray;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     padding: 0.25rem;
     margin: 1rem;

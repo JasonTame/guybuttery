@@ -1,21 +1,11 @@
-import Config from '~/assets/config'
-import axios from 'axios'
-
 export const state = () => ({
-  global: [],
   albums: [],
   homePage: [],
   socialLinks: [],
   tours: [],
-  aboutPage: [],
-  toursPage: [],
-  contactPage: []
 })
 
 export const mutations = {
-  setGlobalOptions(state, obj) {
-    state.global = obj
-  },
   setAlbums(state, list) {
     state.albums = list
   },
@@ -27,15 +17,6 @@ export const mutations = {
   },
   setTours(state, list) {
     state.tours = list
-  },
-  setAboutPage(state, obj) {
-    state.aboutPage = obj
-  },
-  setToursPage(state, obj) {
-    state.toursPage = obj
-  },
-  setContactPage(state, obj) {
-    state.contactPage = obj
   }
 }
 
@@ -81,10 +62,5 @@ export const actions = {
       return res
     })
     await commit('setTours', tours)
-
-    // Get all the global ACF options
-    return axios
-      .get(Config.wpDomain + Config.api.global)
-      .then(res => commit('setGlobalOptions', res.data))
   }
 }

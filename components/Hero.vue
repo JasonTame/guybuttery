@@ -14,17 +14,7 @@
 
 <script>
 export default {
-  data() {
-    return {
-      showModal: false
-    }
-  },
   props: ['image', 'title'],
-  methods: {
-    hideModal() {
-      this.showModal = false
-    }
-  },
   computed: {
     bgImage() {
       return this.image

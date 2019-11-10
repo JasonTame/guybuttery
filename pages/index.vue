@@ -109,10 +109,6 @@ export default {
   margin-top: 3rem;
 }
 
-.vertically-centered {
-  margin: 0 auto;
-}
-
 .album-title {
   margin-top: 4rem;
   margin-bottom: 2rem;

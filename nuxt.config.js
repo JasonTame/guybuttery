@@ -50,7 +50,9 @@ export default {
          }
        ]
       }
-    ]
+    ],
+    '@nuxtjs/pwa',
+
   ],
   /*
   ** Axios module configuration

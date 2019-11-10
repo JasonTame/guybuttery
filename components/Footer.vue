@@ -8,7 +8,7 @@
         v-bind:key="link"
         v-for="link in links"
       >
-        <font-awesome-icon :icon="['fab', link.title]" />
+        <font-awesome-icon :icon="['fab', link.name]" />
       </a>
     </div>
   </footer>
