@@ -4,10 +4,10 @@
     :style="{backgroundImage:'url(' + bgImage + ')'}"
   >
     <div class="hero-body">
-      <div class="container">
+      <div class="container is-fluid">
         <div class="columns">
           <div class="column is-half"></div>
-          <div class="column is-half">
+          <div class="column is-half has-text-centered">
             <h1 class="is-size-2 landing-page-title">{{landingPage.title}}</h1>
             <div
               class="landing-page-text has-text-white markdown"
@@ -86,6 +86,7 @@ export default {
     margin: 2rem 0;
   }
   &-buttons {
+    justify-content: center;
     margin: 2rem 0;
   }
 }
