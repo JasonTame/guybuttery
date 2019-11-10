@@ -66,6 +66,7 @@ collections:
       - {label: Link, name: link, widget: string }
   - label: "Social Media Link"
     name: "social_link"
+    identifier_field: "link"
     folder: "assets/content/social-links"
     create: true
     format: 'json'
@@ -74,7 +75,6 @@ collections:
     fields: 
       - label: "Name"
         name: "name"
-        identifier_field: "link"
         widget: "select"
         options: ["facebook", "instagram", "youtube", "spotify"]
       - {label: Link, name: link, widget: string }
