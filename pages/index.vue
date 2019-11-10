@@ -22,13 +22,19 @@
 
     <div class="section is-medium has-text-centered">
       <h1 class="section-title has-text-white has-text-centered">Upcoming shows & tours</h1>
-      <TourList :tours="tours" />
+      <div v-if="toursListLength">
+        <TourList :tours="tours" />
+        <a
+          v-if="toursListLength > 4"
+          href="/tours"
+          class="tour-cta button is-primary"
+        >View more tours and shows</a>
+      </div>
 
-      <a
-        v-if="toursListLength > 4"
-        href="/tours"
-        class="tour-cta button is-primary"
-      >View more tours and shows</a>
+      <div v-else>
+        <p class="is-size-5">No scheduled tours currently. Check back again soon!</p>
+      </div>
+
       <h1 class="section-title has-text-white has-text-centered album-title">Albums</h1>
       <div class="column is-half has-text-centered vertically-centered">
         <div class="buttons music-buttons are-medium">
@@ -77,7 +83,9 @@ export default {
     },
     tours() {
       let tours = this.$store.state.tours
-      return tours.slice(0, 4)
+      if (tours.length) {
+        return tours.slice(0, 4)
+      }
     },
     toursListLength() {
       let tours = this.$store.state.tours
