@@ -64,6 +64,11 @@ collections:
       - {label: Album Name, name: title, widget: string }
       - {label: Album Author, name: author, widget: string }
       - {label: Link, name: link, widget: string }
+      - label: "Year Released"
+        name: "year_released"
+        default: "" 
+        widget: "datetime"
+        format: "YYYY"
   - label: "Social Media Link"
     name: "social_link"
     folder: "assets/content/social-links"
