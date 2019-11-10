@@ -4,8 +4,8 @@
       <a
         target="_blank"
         class="footer-icons"
-        :href="link.url"
-        v-bind:key="link"
+        :href="link.link"
+        v-bind:key="link.link"
         v-for="link in links"
       >
         <font-awesome-icon :icon="['fab', link.name]" />
