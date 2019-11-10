@@ -5,6 +5,7 @@ export const state = () => ({
   global: [],
   albums: [],
   homePage: [],
+  socialLinks: [],
   tours: [],
   aboutPage: [],
   toursPage: [],
@@ -20,6 +21,9 @@ export const mutations = {
   },
   setHomePage(state, obj) {
     state.homePage = obj
+  },
+  setSocialLinks(state, list) {
+    state.socialLinks = list;
   },
   setTours(state, list) {
     state.tours = list
@@ -53,6 +57,17 @@ export const actions = {
       return res
     })
     await commit('setAlbums', albums)
+
+    // Fetch social links
+    let socialLinkList = await require.context(
+      '~/assets/content/social-links', false, /\.json$/
+    )
+    let socialLinks = socialLinkList.keys().map(key => {
+      let res = socialLinkList(key)
+      res.slug = key.slice(2, -5)
+      return res
+    })
+    await commit('setSocialLinks', socialLinks)
 
     // Fetch tours
     let tourList = await require.context(

@@ -1,7 +1,7 @@
 <template>
   <div>
     <nuxt />
-    <TheFooter :links="$store.state.global.acf.social_media_links" />
+    <TheFooter :links="socialLinks" />
   </div>
 </template>
 
@@ -11,6 +11,11 @@ import TheFooter from '@/components/Footer.vue'
 export default {
   components: {
     TheFooter
+  },
+  computed: {
+    socialLinks() {
+      return this.$store.state.socialLinks
+    }
   }
 }
 </script>
@@ -80,5 +85,9 @@ html {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.vertically-centered {
+  margin: 0 auto;
 }
 </style>
