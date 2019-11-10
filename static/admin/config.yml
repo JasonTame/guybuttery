@@ -19,6 +19,7 @@ collections:
             name: "banner_image"
             widget: "image"
           - {label: Title, name: title, widget: string}
+          - {label: Intro Title, name: intro_title, widget: string}
           - {label: Intro, name: body, widget: markdown}
           - {label: Intro Video, name: intro_video, widget: string}
       - label: "Landing Page"
@@ -34,6 +35,7 @@ collections:
           - {label: Link, name: link, widget: string}
   - label: "Tour"
     name: "tour"
+    identifier_field: "venue" 
     folder: "assets/content/tours"
     create: true
     slug: '{{slug}}'
@@ -47,7 +49,7 @@ collections:
         default: ""
         format: "LLL"
       - {label: Venue, name: venue, widget: string }
-      - {label: Location, name: Location, widget: string }
+      - {label: Location, name: location, widget: string }
       - {label: Link, name: link, widget: string }
   - label: "Album"
     name: "album"
@@ -59,7 +61,7 @@ collections:
       preview: false
     fields:
       - {label: Album Image, name: album_image, widget: image }
-      - {label: Album Name, name: name, widget: string }
+      - {label: Album Name, name: title, widget: string }
       - {label: Album Author, name: author, widget: string }
       - {label: Link, name: link, widget: string }
   - label: "Social Media Link"
