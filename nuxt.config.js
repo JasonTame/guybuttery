@@ -13,6 +13,14 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      
+    ],
+    link: [
+      {
+        rel: "stylesheet",
+        href:
+          "https://fonts.googleapis.com/css?family=Crimson+Pro|Maven+Pro&display=swap"
+      }
     ]
   },
   /*

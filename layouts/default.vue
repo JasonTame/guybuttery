@@ -23,8 +23,7 @@ export default {
 
 <style>
 html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Maven Pro', sans-serif;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
@@ -85,6 +84,10 @@ html {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.title {
+  font-family: 'Crimson Pro', serif;
 }
 
 .vertically-centered {
