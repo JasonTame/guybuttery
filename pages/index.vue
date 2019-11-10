@@ -37,9 +37,27 @@
       <h1 class="section-title has-text-white has-text-centered album-title">Albums</h1>
       <div class="column is-half has-text-centered vertically-centered">
         <div class="buttons music-buttons are-medium">
-          <div class="button is-primary is-outlined">Bandcamp</div>
-          <div class="button is-primary is-outlined">Spotify</div>
-          <div class="button is-primary is-outlined">Apple</div>
+          <div class="button is-primary is-outlined music-button">
+            <a
+              class="has-text-primary"
+              target="_blank"
+              href="https://guybuttery.bandcamp.com/"
+            >Bandcamp</a>
+          </div>
+          <div class="button is-primary is-outlined music-button">
+            <a
+              class="has-text-primary"
+              target="_blank"
+              href="https://open.spotify.com/artist/7MuP7MF52lCdMIi7H9zZfO"
+            >Spotify</a>
+          </div>
+          <div class="button is-primary is-outlined music-button">
+            <a
+              class="has-text-primary"
+              target="_blank"
+              href="https://itunes.apple.com/us/artist/guy-buttery/372389112"
+            >Apple</a>
+          </div>
         </div>
       </div>
 
@@ -103,6 +121,12 @@ export default {
 .music-buttons {
   margin-bottom: 2rem;
   justify-content: center;
+
+  .music-button:hover {
+    a {
+      color: #ffffff !important;
+    }
+  }
 }
 
 .cta-btn {

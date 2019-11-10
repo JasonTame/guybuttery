@@ -53,15 +53,16 @@ export default {
       min-height: 460px;
     }
   }
-}
-.album-button {
-  &:hover {
-    a {
-      color: #ffffff !important;
+
+  .album-button {
+    &:hover {
+      a {
+        color: #ffffff !important;
+      }
     }
-  }
-  &-icon {
-    padding-right: 0.5rem;
+    &-icon {
+      padding-right: 0.5rem;
+    }
   }
 }
 </style>
