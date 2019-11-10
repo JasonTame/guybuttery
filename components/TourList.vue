@@ -13,7 +13,7 @@
         </div>
       </div>
       <!-- Desktop view -->
-      <div :key="tour.id" v-for="tour in tours" class="tour-event is-hidden-mobile">
+      <div :key="tour.id" v-for="tour in tours" class="tour-event tour-details is-hidden-mobile">
         <p class="tour-date">{{tour.date}}</p>
         <p class="tour-venue has-text-primary">{{tour.venue}}</p>
         <p class="tour-location">{{tour.location}}</p>
