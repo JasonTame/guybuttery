@@ -8,7 +8,7 @@
         <h1 class="section-title has-text-centered">{{homePage.intro_title}}</h1>
         <div class="columns">
           <div class="column is-half">
-            <div v-html="homePage.body"></div>
+            <div class="markdown" v-html="$md.render(homePage.body)"></div>
           </div>
           <div class="column is-half">
             <div class="embed-container">
@@ -128,7 +128,6 @@ export default {
     }
   }
 }
-
 .cta-btn {
   margin: 1rem 0;
 }

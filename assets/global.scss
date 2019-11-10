@@ -41,3 +41,14 @@ $fullhd: 1344px + (2 * $gap);
     margin: 1rem;
   }
 }
+
+.markdown {
+  p {
+    margin-top: 1rem !important;
+    strong {
+      color: inherit
+    }
+  }
+
+
+}

@@ -118,9 +118,14 @@ export default {
        ]
       }
     ],
+    '@nuxtjs/markdownit',
     '@nuxtjs/pwa',
 
   ],
+
+  markdownit: {
+    injected: true
+  },
   /*
   ** Axios module configuration
   ** See https://axios.nuxtjs.org/options

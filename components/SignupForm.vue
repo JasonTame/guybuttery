@@ -1,6 +1,6 @@
 <template>
   <div class="has-text-centered signup">
-    <p class="has-text-white is-size-4">Sign up for the latest news about Guy</p>
+    <p class="has-text-white is-size-4">Sign up for the latest Guy Buttery news</p>
     <form
       action="https://quicket.us20.list-manage.com/subscribe/post?u=18bfacf1203a5423ff7b5b682&amp;id=59f193132a"
       method="POST"

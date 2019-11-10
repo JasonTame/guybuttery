@@ -1,6 +1,7 @@
 export const state = () => ({
   albums: [],
   homePage: [],
+  landingPage: [],
   socialLinks: [],
   tours: [],
 })
@@ -11,6 +12,9 @@ export const mutations = {
   },
   setHomePage(state, obj) {
     state.homePage = obj
+  },
+  setLandingPage(state, obj) {
+    state.landingPage = obj
   },
   setSocialLinks(state, list) {
     state.socialLinks = list;
@@ -25,6 +29,10 @@ export const actions = {
     // Fetch home page
     let homePage = '~/assets/content/home.json'
     await commit('setHomePage', homePage)
+
+    // Fetch landing page
+    let landingPage = '~/assets/content/landing.json'
+    await commit('setLandingPage', landingPage)
 
     // Fetch albums
     let albumList = await require.context(
