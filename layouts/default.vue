@@ -33,6 +33,12 @@ html {
   box-sizing: border-box;
 }
 
+a,
+p,
+label {
+  font-family: 'Maven Pro', sans-serif;
+}
+
 *,
 *:before,
 *:after {
